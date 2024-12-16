@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 import { applyColor } from '../apply-color';
-import { State } from '../models';
+import { State } from '../models/extension';
 import { getPeacockRemoteColor, getPeacockColor } from '../configuration';
 
 // function remoteExtensionsInstalled(): boolean {

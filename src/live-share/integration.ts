@@ -4,7 +4,7 @@ import * as vscode from 'vscode';
 
 import { applyColor } from '../apply-color';
 import { registerLiveShareIntegrationCommands } from './liveshare-commands';
-import { State } from '../models';
+import { State } from '../models/extension';
 import { notify } from '../notification';
 import { LiveShareSettings } from './enums';
 import {

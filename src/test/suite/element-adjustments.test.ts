@@ -6,7 +6,7 @@ import {
   ColorSettings,
   IPeacockAffectedElementSettings,
   peacockGreen,
-} from '../../models';
+} from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import {
   updateElementAdjustments,

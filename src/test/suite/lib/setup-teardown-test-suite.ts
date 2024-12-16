@@ -4,7 +4,7 @@ import {
   ForegroundColors,
   starterSetOfFavorites,
   getExtension,
-} from '../../../models';
+} from '../../../models/extension';
 import {
   getAffectedElements,
   getFavoriteColors,

@@ -5,7 +5,7 @@ import {
   getLightenedColorHex,
 } from './color-library';
 import { applyColor, unapplyColors, updateColorSetting } from './apply-color';
-import { State, peacockGreen, docsUri } from './models';
+import { State, peacockGreen, docsUri } from './models/extension';
 import {
   getDarkenLightenPercentage,
   getRandomFavoriteColor,

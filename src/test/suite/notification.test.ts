@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import { IPeacockSettings } from '../../models';
+import { IPeacockSettings } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { notify } from '../../notification';
 import sinon = require('sinon');

@@ -1,4 +1,4 @@
-import { peacockMementos, extensionShortName, State } from './models';
+import { peacockMementos, extensionShortName, State } from './models/extension';
 import { Logger } from './logging';
 
 export interface IMementoLog {

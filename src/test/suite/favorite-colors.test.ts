@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { IPeacockSettings, Commands, azureBlue } from '../../models';
+import { IPeacockSettings, Commands, azureBlue } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { parseFavoriteColorValue } from '../../inputs';
 import { isValidColorInput } from '../../color-library';

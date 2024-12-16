@@ -1,7 +1,7 @@
 import * as assert from 'assert';
 import * as vsls from 'vsls';
 
-import { IPeacockSettings, Commands, ColorSettings, timeout, azureBlue } from '../../../models';
+import { IPeacockSettings, Commands, ColorSettings, timeout, azureBlue } from '../../../models/extension';
 import {
   setupTestSuite,
   teardownTestSuite,

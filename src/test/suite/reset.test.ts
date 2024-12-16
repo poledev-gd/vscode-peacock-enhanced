@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import { IPeacockSettings, ElementNames, peacockGreen, azureBlue, Commands } from '../../models';
+import { IPeacockSettings, ElementNames, peacockGreen, azureBlue, Commands } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import {
   getOriginalColorsForAllElements,

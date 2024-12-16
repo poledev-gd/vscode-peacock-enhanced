@@ -8,7 +8,7 @@ import {
   ColorAdjustmentOptions,
   defaultAmountToDarkenLighten,
   defaultSaturation,
-} from './models';
+} from './models/extension';
 import {
   getColorCustomizationConfigFromWorkspace,
   getDarkForegroundColorOrOverride,

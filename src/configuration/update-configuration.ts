@@ -11,7 +11,7 @@ import {
   AffectedSettings,
   starterSetOfFavorites,
   isObjectEmpty,
-} from '../models';
+} from '../models/extension';
 import { Logger } from '../logging';
 import { getFavoriteColors, getColorCustomizationConfigFromWorkspace } from './read-configuration';
 import { LiveShareSettings } from '../live-share';
@@ -158,6 +158,8 @@ export async function updateAffectedElements(values: IPeacockAffectedElementSett
   );
   await updateGlobalConfiguration(AffectedSettings.DebuggingStatusBar, values.debuggingStatusBar);
   await updateGlobalConfiguration(AffectedSettings.TabActiveBorder, values.tabActiveBorder);
+  
+  await updateGlobalConfiguration(AffectedSettings.Button, values.buttonBackground);
 
   return true;
 }

@@ -9,7 +9,7 @@ import {
   peacockGreen,
   azureBlue,
   StandardSettings,
-} from '../../models';
+} from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { isValidColorInput } from '../../color-library';
 import { executeCommand, stubQuickPick } from './lib/constants';

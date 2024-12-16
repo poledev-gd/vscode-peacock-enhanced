@@ -1,4 +1,4 @@
-import { ISettingsIndexer } from './models';
+import { ISettingsIndexer } from './models/extension';
 
 export function sortSettingsIndexer(unordered: ISettingsIndexer) {
   const ordered: ISettingsIndexer = {};

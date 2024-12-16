@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import { IPeacockSettings, Commands, ColorSettings, peacockGreen } from '../../models';
+import { IPeacockSettings, Commands, ColorSettings, peacockGreen } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { getColorCustomizationConfig, getDarkenLightenPercentage } from '../../configuration';
 import { executeCommand } from './lib/constants';

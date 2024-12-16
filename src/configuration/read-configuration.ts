@@ -1,26 +1,5 @@
 import * as vscode from 'vscode';
 import {
-  ColorSettings,
-  Sections,
-  StandardSettings,
-  extensionShortName,
-  IFavoriteColors,
-  favoriteColorSeparator,
-  IPeacockElementAdjustments,
-  IElementStyle,
-  ColorAdjustment,
-  AllSettings,
-  AffectedSettings,
-  IPeacockAffectedElementSettings,
-  ISettingsIndexer,
-  ElementNames,
-  ColorAdjustmentOptions,
-  IElementColors,
-  ForegroundColors,
-  defaultAmountToDarkenLighten,
-  ColorSource,
-} from '../models';
-import {
   getAdjustedColorHex,
   getBadgeBackgroundColorHex,
   getBackgroundHoverColorHex,
@@ -31,6 +10,9 @@ import {
 } from '../color-library';
 import { LiveShareSettings } from '../live-share';
 import { sortSettingsIndexer } from '../object-library';
+import { defaultAmountToDarkenLighten, extensionShortName, favoriteColorSeparator } from '../models/constants.js';
+import { StandardSettings, Sections, AllSettings, AffectedSettings, ColorSource, ForegroundColors, ColorAdjustment, ElementNames, ColorSettings, ColorAdjustmentOptions } from '../models/enums.js';
+import { ISettingsIndexer, IFavoriteColors, IPeacockAffectedElementSettings, IPeacockElementAdjustments, IElementStyle, IElementColors } from '../models/interfaces.js';
 
 const { workspace } = vscode;
 
@@ -413,6 +395,18 @@ function collectAccentBorderSettings(backgroundHex: string) {
     accentBorderSettings[ColorSettings.tabActiveBorder] = color;
   }
   return accentBorderSettings;
+}
+
+function collectButtonSettings(backgroundHex: string) {
+  const buttonSettings = {} as ISettingsIndexer;
+
+  if (isAffectedSettingSelected(AffectedSettings.Button)) {
+    const buttonStyle = getElementStyle(backgroundHex, ElementNames.Button);
+    buttonSettings[ColorSettings.button_background] = buttonStyle.backgroundHex;
+    buttonSettings[ColorSettings.button_hoverBackground] = buttonStyle.backgroundHoverHex;
+  }
+
+  return buttonSettings;
 }
 
 function collectSquigglyBeGoneSettings() {

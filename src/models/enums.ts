@@ -27,6 +27,7 @@ export enum AffectedSettings {
   StatusAndTitleBorders = 'affectStatusAndTitleBorders',
   TabActiveBorder = 'affectTabActiveBorder',
   TitleBar = 'affectTitleBar',
+  Button = 'affectButton',
 }
 
 export type AllSettings = StandardSettings | AffectedSettings | LiveShareSettings;
@@ -50,10 +51,11 @@ export enum ElementNames {
   activityBar = 'activityBar',
   statusBar = 'statusBar',
   titleBar = 'titleBar',
+  button = 'button'
 }
 
 export enum ColorSettings {
-  activityBar_activeBackground = 'activityBar.activeBackground',
+  activityBar_activeBackground = `${ElementNames.activityBar}.activeBackground`,
   activityBar_background = 'activityBar.background',
   activityBar_foreground = 'activityBar.foreground',
   activityBar_inactiveForeground = 'activityBar.inactiveForeground',
@@ -82,6 +84,16 @@ export enum ColorSettings {
   titleBar_border = 'titleBar.border',
   titleBar_inactiveBackground = 'titleBar.inactiveBackground',
   titleBar_inactiveForeground = 'titleBar.inactiveForeground',
+  
+  button_background = `${ElementNames.button}.background`,
+  button_border = `${ElementNames.button}.border`,
+  button_foreground = `${ElementNames.button}.foreground`,
+  button_hoverBackground = `${ElementNames.button}.hoverBackground`,
+  button_hoverForeground = `${ElementNames.button}.hoverForeground`,
+  button_secondaryBackground = `${ElementNames.button}.secondaryBackground`,
+  button_secondaryForeground = `${ElementNames.button}.secondaryForeground`,
+  button_secondaryHoverBackground = `${ElementNames.button}.secondaryHoverBackground`,
+  button_secondaryHoverForeground = `${ElementNames.button}.secondaryHoverForeground`,
 }
 
 export type ColorAdjustment = 'lighten' | 'darken' | 'none';

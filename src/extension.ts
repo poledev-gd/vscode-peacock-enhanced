@@ -8,7 +8,7 @@ import {
   extensionShortName,
   getExtensionVersion,
   ColorSource,
-} from './models';
+} from './models/extension';
 import {
   resetWorkspaceColorsHandler,
   enterColorHandler,

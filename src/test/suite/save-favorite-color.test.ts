@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { Commands, IPeacockSettings } from '../../models';
+import { Commands, IPeacockSettings } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { executeCommand, lightenActivityBarElementAdjustments } from './lib/constants';
 import {

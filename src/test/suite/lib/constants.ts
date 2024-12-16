@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import * as sinon from 'sinon';
-import { IPeacockAffectedElementSettings, IPeacockElementAdjustments } from '../../../models';
+import { IPeacockAffectedElementSettings, IPeacockElementAdjustments } from '../../../models/extension';
 
 export const executeCommand = vscode.commands.executeCommand;
 

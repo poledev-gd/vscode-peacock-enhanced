@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as sinon from 'sinon';
 import * as assert from 'assert';
-import { IPeacockSettings, Commands, docsUri } from '../../models';
+import { IPeacockSettings, Commands, docsUri } from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import { executeCommand } from './lib/constants';
 

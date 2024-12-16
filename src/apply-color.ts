@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-import { ColorSettings, extensionShortName, ISettingsIndexer } from './models';
+import { ColorSettings, extensionShortName, ISettingsIndexer } from './models/extension';
 import {
   getColorCustomizationConfigFromWorkspace,
   prepareColors,

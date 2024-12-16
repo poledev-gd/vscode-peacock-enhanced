@@ -8,7 +8,7 @@ import {
   ColorSettings,
   ReadabilityRatios,
   peacockGreen,
-} from '../../models';
+} from '../../models/extension';
 import { setupTestSuite, teardownTestSuite, setupTest } from './lib/setup-teardown-test-suite';
 import {
   getKeepForegroundColor,

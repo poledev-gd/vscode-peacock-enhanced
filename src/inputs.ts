@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { favoriteColorSeparator, peacockGreen } from './models';
+import { favoriteColorSeparator, peacockGreen } from './models/extension';
 import { getFavoriteColors } from './configuration';
 import { applyColor } from './apply-color';
 

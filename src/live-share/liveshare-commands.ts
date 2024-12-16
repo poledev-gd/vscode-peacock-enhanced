@@ -7,7 +7,7 @@ import { applyColor } from '../apply-color';
 import { LiveShareCommands, LiveShareSettings } from './enums';
 import { refreshLiveShareSessionColor, revertLiveShareWorkspaceColors } from './integration';
 import { updateLiveShareColor, getEnvironmentAwareColor } from '../configuration';
-import { State } from '../models';
+import { State } from '../models/extension';
 
 const changeColorOfLiveShareSessionFactory = (isHost: boolean) => {
   return async function changeColorOfLiveShareSession() {
